@@ -23,3 +23,5 @@ This project has been built primarily from an academic / space station spotting 
 API's required are:
 1. Geocoder - Open Cage API
 2. One of Celestrak or N2YO API
+
+SMTP Email id is to be configured using yagmail - https://pypi.org/project/yagmail/
