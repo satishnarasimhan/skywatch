@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri May 28 11:38:47 2021
-
-@author: Satish Narasimhan
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Tue Jan 12 13:54:17 2021
 
 @author: Satish Narasimhan
@@ -21,11 +14,11 @@ import pandas as pd
 
 # Provide list of mail id / recipients for each location
 mailing_list = {
-    "narasisa@gmail.com": 'Bengaluru'
-    ,"nithya.sridharan@gmail.com" : 'Singapore' 
-    ,"divyasridharan10@gmail.com" : 'Bengaluru'
-    ,"satishn.narasimhan@gmail.com" : 'London'
-    ,"meet.srivatsan@gmail.com" : 'Chennai'
+    "<<>>": 'Bengaluru'
+    ,"<<>>" : 'Singapore' 
+    ,"<<>>" : 'Bengaluru'
+    ,"<<>>" : 'London'
+    ,"<<>>" : 'Chennai'
      }
 
 # Objects that are to be tracked
@@ -139,7 +132,7 @@ for loc in locations:
                         
             dfObj = dfObj.append({'Date':risetime,'Time': risetime,'View': visibility,'Duration': duration,'Max. Elev.': maxEl[i],'Start Az': start_az_dir , 'Max. Az' : max_az_dir,'End Az' : end_az_dir,'Mag.': magnitude[i]}, ignore_index = True)
                 
-            uname ='skywatchermailer@gmail.com'
+            uname ='"<<>>"'
             to = uname    
             header = satname[0]
             subject = 'Sky Watcher Alert - ' + header
