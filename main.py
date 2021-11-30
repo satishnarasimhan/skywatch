@@ -13,6 +13,23 @@ import functions as f
 import pandas as pd
 import yagmail
 
+# =============================================================================
+# 
+import ssl
+# 
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    # Legacy Python that doesn't verify HTTPS certificates by default
+    pass
+else:
+    # Handle target environment that doesn't support HTTPS verification
+    ssl._create_default_https_context = _create_unverified_https_context
+# 
+# 
+# =============================================================================
+
+
 # Provide list of mail id / recipients for each location
 mailing_list = {
      "email1@gmail.com": 'Bengaluru'
